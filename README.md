@@ -54,6 +54,12 @@ This [challenge](/qc_challenge.py) exists to give students a sandbox and test th
 
 Students should only attempt this after understanding the [coin-toss demo](#coin-toss-experiment) and familiarizing themselves with the basics of [IBM's Qiskit library](https://www.ibm.com/quantum/qiskit).
 
+Run this file
+
+```terminal
+C:\foo@bar\QSKT-101-Intro-to-Quantum-Computing>python qc_challenge.py
+```
+
 The goal of this challenge is to create a circuit that takes any single-qubit input and converts it into a |0> output. Alternatively, changing the TEST parameter to '1' changes the target output to |1>.
 
 ## Solutions

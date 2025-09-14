@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 
-# Use "python qc_cointoss.py" from your cmd line to run this file.
-# Install requirements using "pip install -r requirements.txt"
-
 from qiskit import QuantumCircuit, transpile
 from qiskit.visualization import plot_histogram
 from qiskit_aer import AerSimulator
