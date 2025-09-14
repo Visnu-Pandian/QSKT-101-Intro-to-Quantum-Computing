@@ -1,9 +1,31 @@
+# ====================
+# 		Answers
+# ====================
+
 # When testing for conversion to |0>
 
 with qc.if_test((0, 1)):
-    qc.x(0)
+	qc.x(0)
 
 # When testing for conversion to |1>
 
 with qc.if_test((0, 0)):
-    qc.x(0)
+	qc.x(0)
+
+# ========================
+# 		Explanation
+# ========================
+
+> with qc
+# This conditional structure is used to pick a specific QuantumCircuit to perform an action on.
+
+> qc.if_test((0, 1))
+# Here, the if_test() structure is checking if the 1st classical register (index 0) has a value of 1 (binary 1)
+# Register-value pairs are always represented via tuples.
+
+# If you wanted to check a 2-bit register for value 11 (binary 3), it would be done as follows:
+# qc.if_test((0, 3))
+
+> qc.x(0)
+# This is the Pauli X-gate, which performs a bit flip on whichever register is specified with the QuantumCircuit provided.
+# Because we are only working with one single-bit register, this value can be defaulted to 0.

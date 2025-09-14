@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools=>61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "QC-sample"
+version = "1.0.0"
+requires-python = ">=3.12"
+dependencies = [
+    "qiskit>=2.1.2",
+    "qiskit-aer>=0.17.1",
+    "matplotlib>=3.10.6"
+]
