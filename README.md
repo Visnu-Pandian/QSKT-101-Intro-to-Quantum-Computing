@@ -4,7 +4,7 @@ This project is part of an introductory lecture on Quantum Computing.
 
 The project seeks to explore the practical uses of Quantum Computing by integrating it into a familiar programming language such as Python. This is done via [IBM's Qiskit library](https://www.ibm.com/quantum/qiskit).
 
-This project is maintained by [@Visnu-Pandian](@Visnu-Pandian). Please contact me via email for any inquiries, issues, or additional material regarding this project.
+This project is maintained by @Visnu-Pandian. Please contact me via email for any inquiries, issues, or additional material regarding this project.
 
 Project contact email: <visnupandian1@gmail.com>
 
