@@ -1,0 +1,9 @@
+# When testing for conversion to |0>
+
+with qc.if_test((0, 1)):
+    qc.x(0)
+
+# When testing for conversion to |1>
+
+with qc.if_test((0, 0)):
+    qc.x(0)
