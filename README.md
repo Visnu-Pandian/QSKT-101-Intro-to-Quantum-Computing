@@ -24,12 +24,6 @@ Project contact email: <visnupandian1@gmail.com>
 pip install -r requirements.txt
 ```
 
-### Using pyproject.toml
-
-```bash
-pip install .
-```
-
 ## Lecture Slides
 
 This lecture was originally designed for members of [CyberWVU](https://wvuengage.wvu.edu/organization/cyberwvu). It was designed to span one hour with the activity and challenge included.
