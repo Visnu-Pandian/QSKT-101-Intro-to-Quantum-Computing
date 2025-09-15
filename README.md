@@ -56,7 +56,10 @@ Run this file
 C:\foo@bar\QSKT-101-Intro-to-Quantum-Computing>python qc_challenge.py
 ```
 
-The goal of this challenge is to create a circuit that takes any single-qubit input and converts it into a |0> output. Alternatively, changing the TEST parameter to '1' changes the target output to |1>.
+The goal of this challenge is to create a circuit that takes any single-qubit input and converts it into a |0> output.
+To visualize entanglement, students who solve the first challenge can try to make a circuit which always outputs |1>.
+
+Further, there is also a two-qubit challenge which works on the same basis for students who are confident in their knowledge.
 
 ## Solutions
 

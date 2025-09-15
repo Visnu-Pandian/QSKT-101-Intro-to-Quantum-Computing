@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from qiskit import QuantumCircuit
-from qc_unit_test import test_circuit
+from qc_unit_test import test_one_qubit_circuit, test_two_qubit_circuit
 import sys, io
 
 # Adjust system text and print formatting
@@ -9,11 +9,11 @@ original_stdout = sys.stdout
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8') 
 
 # Test parameter. Edit to change the qubit value being tested for.
-TEST='0'
+TEST="0"
 
 def create_custom_circuit():
 	f"""
-	YOUR TASK: Create a circuit that resets any single-qubit state to |{TEST}>.
+	YOUR TASK: Create a circuit that resets any qubit state to |{TEST}>.
 	
 	Available gates:
 	- qc.x(0) # Pauli-X gate (bit flip)
@@ -25,16 +25,35 @@ def create_custom_circuit():
 	- qc.if_test((...))
 	
 	Test states:
+ 
+	One-qubit
 	- |0>
 	- |1>
 	- |H>
-	
+ 
+	Two-qubit
+	- |00>
+ 	- |01>
+  	- |10>
+   	- |11>
+	- |0H>
+	- |H0>     
+	- |1H>
+ 	- |H1>
+  	- |HH>
+    
 	Returns:
 	qc: Your Quantum Circuit
 	"""
+ 
+	# One-qubit initializers
 	qc = QuantumCircuit(1, 1)
 	qc.measure(0, 0)
 	
+	# Two-qubit initializers
+	# qc = QuantumCircuit(2, 2)
+	# qc.measure(range(2), range(2))
+ 
 	# ============ YOUR CODE HERE ==========
 	# Try different gates to see what works!
 	# ======================================
@@ -49,4 +68,7 @@ if __name__ == "__main__":
 	print("===========================================\n")
 	
 	qc = create_custom_circuit()
-	test_circuit(qc, TEST)
+ 
+	# Uncomment whichever test you want to run.
+	test_one_qubit_circuit(qc, TEST)
+	# test_two_qubit_circuit(qc, TEST)
