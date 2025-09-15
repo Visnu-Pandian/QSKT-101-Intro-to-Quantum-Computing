@@ -21,6 +21,8 @@ Project contact email: <visnupandian1@gmail.com>
 ### Using requirements.txt
 
 ```bash
+git clone https://github.com/Visnu-Pandian/QSKT-101-Intro-to-Quantum-Computing.git
+
 pip install -r requirements.txt
 ```
 
