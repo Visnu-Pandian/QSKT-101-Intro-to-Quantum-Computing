@@ -6,14 +6,11 @@ import sys, io
 
 # Adjust system text and print formatting
 original_stdout = sys.stdout
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8') 
-
-# Test parameter. Edit to change the qubit value being tested for.
-TEST="0"
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 def create_custom_circuit():
 	f"""
-	YOUR TASK: Create a circuit that resets any qubit state to |{TEST}>.
+	YOUR TASK: Create a circuit that resets any qubit state to |0> (|00> in case of two-qubit system).
 	
 	Available gates:
 	- qc.x(0) # Pauli-X gate (bit flip)
@@ -70,5 +67,5 @@ if __name__ == "__main__":
 	qc = create_custom_circuit()
  
 	# Uncomment whichever test you want to run.
-	test_one_qubit_circuit(qc, TEST)
-	# test_two_qubit_circuit(qc, TEST)
+	test_one_qubit_circuit(qc)
+	# test_two_qubit_circuit(qc)
