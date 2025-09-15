@@ -12,6 +12,20 @@ with qc.if_test((0, 1)):
 with qc.if_test((0, 0)):
 	qc.x(0)
 
+# Two-qubit solutions concat multiple with statements
+
+with qc.if_test((0, 1)):
+	qc.x(0)
+with qc.if_test((1, 1)):
+	qc.x(0)
+
+# Alternatively, reset() also works if the target is |0>/|00> specifically.
+
+qc.reset(0) # Resets first qubit to |0>
+qc.reset(1) # Resets seconds qubit to |0>
+
+# However, reset() is not provided to students as part of this challenge.
+
 # ========================
 # 		Explanation
 # ========================
